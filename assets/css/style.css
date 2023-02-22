@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: var(--font-primary);
 }
 
 :root {
@@ -12,10 +13,7 @@
     --light: #a3a3a3;
     --lighter: #ffffff;
     --limegreen: #adff2f;
-}
-
-body {
-    font-family: 'Circular Std', sans-serif;
+    --font-primary: 'Circular Std', sans-serif;
 }
 
 img,
@@ -58,11 +56,16 @@ a {
     color: var(--lighter);
 }
 
+.m_tb20{
+    margin: 20px 0;
+}
+
+
 /* #endregion Utility */
 
 /* #region Debug */
 
-.debug * {
+.debu1g * {
     outline: 1px solid limegreen;
 }
 
@@ -74,9 +77,10 @@ a {
     height: calc(100vh - 90px);
 }
 
-aside {
+.side {
     flex-basis: 50px;
     background-color: var(--darker);
+    padding: 5px 0;
 }
 
 .aside_header svg,
@@ -100,7 +104,9 @@ aside {
 
 .logo_wrapper,
 #sections li,
-.playlists,
+.playlists h3,
+.playlists div,
+.playlists li,
 .aside_footer {
     padding: 10px;
     margin-bottom: 10px;
@@ -108,7 +114,10 @@ aside {
 
 .playlists {
     display: none;
-    overflow-y: auto;
+}
+
+.playlists > h3{
+    margin: 20px 0;
 }
 
 #user {
@@ -146,21 +155,25 @@ nav {
 
 /* #endregion Footer */
 
+/* #region Effects */
+
+.border_limegreen {
+    box-shadow: inset 4px 0 0 0 var(--limegreen);
+}
+
+/* #endregion Effects */
+
 /* #region Responsive */
 
 @media screen and (min-width: 480px) {
 
-    aside {
-        flex-basis: 215px;
+    .side {
+        flex-basis: 230px;
     }
 
     .aside_header svg,
     .aside_footer svg {
         margin-right: 10px;
-    }
-
-    .border_limegreen {
-        border-left: 4px solid var(--limegreen);
     }
 
     .logo_wrapper {
@@ -183,7 +196,23 @@ nav {
     }
 
     .playlists {
-        display: inline-block;
+        display: block;
+    }
+
+    .btn_new{
+        width: 30px;
+        aspect-ratio: 1/1;
+        text-align: center;
+        font-size: 2.5rem;
+        color: var(--dark);
+        background-color: var(--light);
+        line-height: 30px;
+        margin-right: 10px;
+    }
+
+    .container_pl{
+        overflow-y: auto;
+        height: calc(100vh - 80px -140px -23px -30px -80px -90px);
     }
 
     #user span {
