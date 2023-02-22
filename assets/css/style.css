@@ -180,13 +180,19 @@ nav {
 
 #sections li:hover a,
 .playlists a:hover,
-.user span:hover {
+.hovered:hover {
     color: var(--lighter);
 }
 
 #sections li:hover svg path {
     fill: var(--lighter);
 }
+
+.btn_update:hover{
+    color: var(--lighter);
+    border-color: var(--lighter);
+}
+
 
 /* #endregion Effects */
 
