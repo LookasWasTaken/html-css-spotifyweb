@@ -54,10 +54,6 @@ a {
     align-items: flex-end;
 }
 
-.border_limegreen {
-    border-left: 4px solid var(--limegreen);
-}
-
 .text_light {
     color: var(--lighter);
 }
@@ -161,6 +157,10 @@ nav {
     .aside_header svg,
     .aside_footer svg {
         margin-right: 10px;
+    }
+
+    .border_limegreen {
+        border-left: 4px solid var(--limegreen);
     }
 
     .logo_wrapper {
