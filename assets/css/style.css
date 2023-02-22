@@ -18,7 +18,7 @@ body {
     font-family: 'Circular Std', sans-serif;
 }
 
-img {
+img, svg {
     max-width: 100%;
     vertical-align: middle;
 }
@@ -43,6 +43,10 @@ a {
 
 .align_center {
     align-items: center;
+}
+
+.space_between{
+    justify-content: space-between;
 }
 
 .flex_end {
@@ -71,6 +75,16 @@ aside {
     background-color: var(--darker);
 }
 
+.aside_header svg, .aside_footer svg{
+    width: 30px;
+    aspect-ratio: 1/1;
+    margin: 10px;
+}
+
+.aside_header a, .aside_footer a{
+    color: var(--light);
+}
+
 .complete_logo {
     display: none;
 }
@@ -82,6 +96,10 @@ aside {
 .playlists{
     display: none;
     overflow-y: auto;
+}
+
+#user{
+    gap: 0.5rem;
 }
 
 #user span{
