@@ -89,7 +89,7 @@ a {
 }
 
 .side {
-    flex-basis: 50px;
+    flex-basis: 40px;
     background-color: var(--darker);
 }
 
@@ -185,7 +185,7 @@ nav {
 @media screen and (min-width: 480px) {
 
     .side {
-        flex-basis: 230px;
+        flex-basis: 200px;
     }
 
     .aside_header svg,
