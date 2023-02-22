@@ -45,6 +45,10 @@ a {
     align-items: center;
 }
 
+.flex_end {
+    align-items: flex-end;
+}
+
 /* #endregion Utility */
 
 /* #region Debug */
@@ -78,6 +82,10 @@ aside {
 .playlists{
     display: none;
     overflow-y: auto;
+}
+
+#user span{
+    display: none;
 }
 
 #app_main {
@@ -133,6 +141,10 @@ nav {
     }
 
     .playlists{
+        display: inline-block;
+    }
+
+    #user span{
         display: inline-block;
     }
 }
