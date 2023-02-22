@@ -48,6 +48,10 @@ a {
     justify-content: space-between;
 }
 
+.justify_end{
+    justify-content: end;
+}
+
 .flex_end {
     align-items: flex-end;
 }
@@ -60,6 +64,13 @@ a {
     margin: 20px 0;
 }
 
+.btn_update{
+    padding: 15px 35px;
+    border-radius: 20px;
+    border: 1px solid var(--light);
+    color: var(--light);
+    margin: 15px;
+}
 
 /* #endregion Utility */
 
@@ -139,7 +150,7 @@ a {
 }
 
 nav {
-    flex-basis: 100px;
+    flex-basis: 80px;
     background-color: var(--dark);
 }
 
