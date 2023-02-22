@@ -80,8 +80,9 @@ a {
 .side {
     flex-basis: 50px;
     background-color: var(--darker);
-    padding: 5px 0;
 }
+
+
 
 .aside_header svg,
 .aside_footer svg {
@@ -109,7 +110,6 @@ a {
 .playlists li,
 .aside_footer {
     padding: 10px;
-    margin-bottom: 10px;
 }
 
 .playlists {
@@ -117,7 +117,7 @@ a {
 }
 
 .playlists > h3{
-    margin: 20px 0;
+    margin: 10px 0;
 }
 
 #user {
@@ -126,6 +126,12 @@ a {
 
 #user span {
     display: none;
+}
+
+.profile a:last-of-type svg{
+    aspect-ratio: 1 / 1;
+    background-color: var(--light);
+    border-radius: 50%;
 }
 
 #app_main {
@@ -212,7 +218,7 @@ nav {
 
     .container_pl{
         overflow-y: auto;
-        height: calc(100vh - 80px -140px -23px -30px -80px -90px);
+        height: calc(100vh - 500px);
     }
 
     #user span {
