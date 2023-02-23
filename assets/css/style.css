@@ -230,7 +230,7 @@ nav {
 }
 
 .img_wrapper>img {
-    transition: border-radius 0.5s;
+    transition: border-radius 0.5s, transform 0.5s;
 }
 
 /* #endregion Top */
@@ -316,6 +316,7 @@ nav {
 
 .img_wrapper>img:hover {
     border-radius: 50%;
+    transform: scale(0.8);
 }
 
 .complete_logo:hover,
