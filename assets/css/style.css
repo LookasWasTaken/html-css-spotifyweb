@@ -316,7 +316,7 @@ nav {
 
 .img_wrapper>img:hover {
     border-radius: 50%;
-    transform: scale(0.8);
+    transform: scale(0.7);
 }
 
 .complete_logo:hover,
@@ -395,7 +395,7 @@ nav {
 }
 
 .container_pl::-webkit-scrollbar-thumb {
-    background-color: var(--light-dark);
+    background-color: var(--darker);
     border-radius: 50px;
 }
 
@@ -404,7 +404,7 @@ nav {
 }
 
 .container_pl::-webkit-scrollbar-track {
-    background-color: var(--dark);
+    background-color: var(--darker);
     border-radius: 10px;
 }
 
@@ -413,7 +413,7 @@ nav {
 }
 
 #content::-webkit-scrollbar-thumb {
-    background-color: var(--light-dark);
+    background-color: var(--dark-soft);
     border-radius: 20px;
 }
 
@@ -422,7 +422,7 @@ nav {
 }
 
 #content::-webkit-scrollbar-track {
-    background-color: var(--dark);
+    background-color: var(--dark-soft);
     border-radius: 10px;
 }
 
