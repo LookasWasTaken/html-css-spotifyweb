@@ -182,15 +182,24 @@ nav {
 .playlists a:hover,
 .hovered:hover {
     color: var(--lighter);
+    transition: color 1s;
 }
+
+.btn_new:hover{
+    background-color: var(--lighter);
+    transition: background-color 1s;
+}
+
 
 #sections li:hover svg path {
     fill: var(--lighter);
+    transition: fill 1s;
 }
 
 .btn_update:hover {
     color: var(--lighter);
     border-color: var(--lighter);
+    transition: color 1s, border-color 1s;
 }
 
 .container_pl::-webkit-scrollbar {
