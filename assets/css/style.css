@@ -68,6 +68,10 @@ a {
     color: var(--lighter);
 }
 
+.text_grey {
+    color: var(--light);
+}
+
 .m_tb20 {
     margin: 20px 0;
 }
@@ -77,11 +81,11 @@ a {
 }
 
 .btn_update {
-    padding: 15px 35px;
-    border-radius: 20px;
+    padding: 15px 20px;
+    border-radius: 30px;
     border: 1px solid var(--light);
     color: var(--light);
-    margin: 15px;
+    margin: 20px;
 }
 
 /* #endregion Utility */
@@ -174,7 +178,9 @@ nav {
     flex-shrink: 0;
 }
 
-
+.navbar>ul>li {
+    padding: 10px;
+}
 
 
 /* #endregion Top */
@@ -193,6 +199,12 @@ nav {
 
 #sections li:hover {
     box-shadow: inset 4px 0 0 0 var(--limegreen);
+    transition: box-shadow 1s;
+}
+
+.navbar>ul>li:hover {
+    box-shadow: inset 0 -4px 0 0 var(--limegreen);
+    transition: box-shadow 1s;
 }
 
 #sections li:hover a,
@@ -214,9 +226,11 @@ nav {
 }
 
 .btn_update:hover {
-    color: var(--lighter);
-    border-color: var(--lighter);
-    transition: color 1s, border-color 1s;
+    color: var(--limegreen);
+    border-color: var(--limegreen);
+    transform: scale(1.2);
+    transform-origin: right;
+    transition: color 1s, border-color 1s, transform 1s;
 }
 
 .container_pl::-webkit-scrollbar {
@@ -225,7 +239,7 @@ nav {
 
 .container_pl::-webkit-scrollbar-thumb {
     background-color: var(--light-dark);
-    border-radius: 20px;
+    border-radius: 50px;
 }
 
 .container_pl::-webkit-scrollbar-thumb:hover {
