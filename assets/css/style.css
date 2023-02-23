@@ -40,12 +40,20 @@ a {
     flex-direction: column;
 }
 
+.wrap {
+    flex-wrap: wrap;
+}
+
 .align_center {
     align-items: center;
 }
 
 .space_between {
     justify-content: space-between;
+}
+
+.justify_center {
+    justify-content: center;
 }
 
 .justify_end {
@@ -62,6 +70,10 @@ a {
 
 .m_tb20 {
     margin: 20px 0;
+}
+
+.m_10 {
+    margin: 10px;
 }
 
 .btn_update {
@@ -89,11 +101,15 @@ a {
 }
 
 .side {
-    flex-basis: 40px;
+    flex-basis: 50px;
     background-color: var(--darker);
+    flex-shrink: 0;
 }
 
-
+.only_logo {
+    width: 20px;
+    aspect-ratio: 1/1;
+}
 
 .aside_header svg,
 .aside_footer svg {
@@ -106,14 +122,6 @@ a {
     color: var(--light);
 }
 
-.complete_logo {
-    display: none;
-}
-
-#sections span {
-    display: none;
-}
-
 .logo_wrapper,
 #sections li,
 .playlists h3,
@@ -121,10 +129,6 @@ a {
 .playlists li,
 .aside_footer {
     padding: 10px;
-}
-
-.playlists {
-    display: none;
 }
 
 .playlists>h3 {
@@ -135,11 +139,17 @@ a {
     gap: 0.5rem;
 }
 
-#user span {
+.complete_logo,
+#sections span,
+.playlists,
+#user>.download>a>span,
+#user>.profile>a>span,
+#user>hr {
     display: none;
 }
 
 .profile a:last-of-type svg {
+    width: 25px;
     aspect-ratio: 1 / 1;
     background-color: var(--light);
     border-radius: 50%;
@@ -157,7 +167,14 @@ nav {
 #content {
     flex-grow: 1;
     background-color: var(--dark-soft);
+    overflow-y: auto;
 }
+
+.navbar {
+    flex-shrink: 0;
+}
+
+
 
 
 /* #endregion Top */
@@ -185,7 +202,7 @@ nav {
     transition: color 1s;
 }
 
-.btn_new:hover{
+.btn_new:hover {
     background-color: var(--lighter);
     transition: background-color 1s;
 }
@@ -246,18 +263,6 @@ nav {
         display: none;
     }
 
-    .complete_logo {
-        display: inline-block;
-    }
-
-    #sections span {
-        display: inline-block;
-    }
-
-    .playlists {
-        display: block;
-    }
-
     .btn_new {
         width: 30px;
         aspect-ratio: 1/1;
@@ -278,6 +283,14 @@ nav {
         display: inline-block;
     }
 
+    .complete_logo,
+    #sections span,
+    .playlists,
+    #user>.download>a>span,
+    #user>.profile>a>span,
+    #user>hr {
+        display: block;
+    }
 }
 
 @media screen and (min-width: 768px) {}
