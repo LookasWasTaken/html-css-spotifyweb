@@ -234,7 +234,7 @@ nav {
     transition: border-radius 0.5s, transform 0.5s;
 }
 
-.overbtn{
+.overbtn {
     position: absolute;
     top: 40%;
     right: 38%;
@@ -298,6 +298,7 @@ nav {
     background-color: var(--light);
     border-radius: 50px;
     height: 5px;
+    position: relative;
 }
 
 .current_time {
@@ -318,12 +319,11 @@ nav {
     height: 5px;
 }
 
-
 /* #endregion Footer */
 
 /* #region Effects */
 
-.img_wrapper>img:hover + .overbtn{
+.img_wrapper>img:hover+.overbtn {
     display: block;
 }
 
@@ -368,7 +368,7 @@ nav {
     transition: fill 1s;
 }
 
-.btn_update{
+.btn_update {
     transform-origin: right;
     transition: color 1s, border-color 1s, transform 1s;
 }
@@ -396,11 +396,38 @@ nav {
     cursor: pointer;
 }
 
-#scale{
+.time:hover>.current_time:hover::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    height: 10px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    background-color: var(--lighter);
+
+}
+
+.volume:hover>.current_volume:hover::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    height: 10px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    background-color: var(--lighter);
+}
+
+#scale {
     transition: transform 0.5s;
 }
 
-#scale:hover{
+#scale:hover {
     transform: scale(2);
 }
 
