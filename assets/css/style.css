@@ -151,12 +151,11 @@ a {
     flex-shrink: 0;
 }
 
-.only_logo {
-    width: 20px;
+.only_logo, .aside_header svg{
+    width: 25px;
     aspect-ratio: 1/1;
 }
 
-.aside_header svg,
 .aside_footer svg {
     width: 20px;
     aspect-ratio: 1/1;
@@ -213,6 +212,7 @@ nav {
     flex-grow: 1;
     background-color: var(--dark-soft);
     overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .navbar {
@@ -244,6 +244,29 @@ nav {
     background-color: var(--light-dark);
 }
 
+.footer_left, .footer_center, .footer_right{
+    width: calc(100% / 3);
+}
+
+.footer_left{
+    padding-left: 8px;
+    gap: 0.2rem;
+}
+
+.footer_center{
+    padding: 0 5px;
+}
+
+.footer_right{
+    padding-right: 8px;
+}
+
+.current_song{
+    transition: width 0.5s;
+    width: 2rem;
+    aspect-ratio: 1/1;
+}
+
 /* #endregion Footer */
 
 /* #region Effects */
@@ -255,7 +278,8 @@ nav {
 .complete_logo:hover,
 .img_wrapper,
 .info > h3,
-.info > h4{
+.info > h4,
+.current_song img{
     cursor: pointer;
 }
 
@@ -293,6 +317,11 @@ nav {
     transform: scale(1.1);
     transform-origin: right;
     transition: color 1s, border-color 1s, transform 1s;
+}
+
+.info_text a:hover, .info_icon i:hover{
+    color: var(--limegreen);
+    transition: color 1s;
 }
 
 .container_pl::-webkit-scrollbar {
