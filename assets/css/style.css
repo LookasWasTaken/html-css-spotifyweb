@@ -540,6 +540,10 @@ nav {
     .playlists, #user {
         display: none;
     }
+
+    #app_main > nav > a{
+        display: none;
+    }
 }
 
 /* #endregion Responsive */
