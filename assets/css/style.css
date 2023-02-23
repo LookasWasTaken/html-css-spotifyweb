@@ -133,7 +133,7 @@ a {
 
 /* #region Debug */
 
-.debu1g * {
+.debug * {
     outline: 1px solid limegreen;
 }
 
@@ -151,7 +151,8 @@ a {
     flex-shrink: 0;
 }
 
-.only_logo, .aside_header svg{
+.only_logo,
+.aside_header svg {
     width: 25px;
     aspect-ratio: 1/1;
 }
@@ -228,11 +229,9 @@ nav {
     aspect-ratio: 1/1;
 }
 
-.img_wrapper > img{
+.img_wrapper>img {
     transition: border-radius 0.5s;
 }
-
-
 
 /* #endregion Top */
 
@@ -244,42 +243,86 @@ nav {
     background-color: var(--light-dark);
 }
 
-.footer_left, .footer_center, .footer_right{
+.footer_left,
+.footer_center,
+.footer_right {
     width: calc(100% / 3);
 }
 
-.footer_left{
+.footer_left {
     padding-left: 8px;
-    gap: 0.2rem;
+    gap: 0.5rem;
 }
 
-.footer_center{
+.footer_center {
     padding: 0 5px;
+    gap: 0.5rem;
 }
 
-.footer_right{
+.footer_right {
     padding-right: 8px;
+    gap: 0.5rem;
 }
 
-.current_song{
+.current_info {
+    gap: 0.5rem;
+}
+
+.current_song {
     transition: width 0.5s;
     width: 2rem;
     aspect-ratio: 1/1;
 }
 
+.play_buttons {
+    gap: 10px;
+}
+
+.play_timebar {
+    width: 100%;
+}
+
+.time,
+.volume {
+    flex-grow: 1;
+    margin: 0 10px;
+    background-color: var(--light);
+    border-radius: 50px;
+    height: 5px;
+}
+
+.current_time {
+    background-color: var(--lighter);
+    width: 15%;
+    border-radius: 50px;
+    height: 5px;
+}
+
+.volumebar {
+    width: 60%;
+}
+
+.current_volume {
+    background-color: var(--lighter);
+    width: 85%;
+    border-radius: 50px;
+    height: 5px;
+}
+
+
 /* #endregion Footer */
 
 /* #region Effects */
 
-.img_wrapper > img:hover {
+.img_wrapper>img:hover {
     border-radius: 50%;
 }
 
 .complete_logo:hover,
 .img_wrapper,
-.info > h3,
-.info > h4,
-.current_song img{
+.info>h3,
+.info>h4,
+.current_song img {
     cursor: pointer;
 }
 
@@ -305,7 +348,6 @@ nav {
     transition: background-color 1s;
 }
 
-
 #sections li:hover svg path {
     fill: var(--limegreen);
     transition: fill 1s;
@@ -319,9 +361,20 @@ nav {
     transition: color 1s, border-color 1s, transform 1s;
 }
 
-.info_text a:hover, .info_icon i:hover{
+.info_text a:hover,
+.info_icon i:hover,
+.play_buttons i:hover,
+.footer_right i:hover {
     color: var(--limegreen);
     transition: color 1s;
+    cursor: pointer;
+}
+
+.current_time:hover,
+.current_volume:hover {
+    background-color: var(--limegreen);
+    transform: background-color 1s;
+    cursor: pointer;
 }
 
 .container_pl::-webkit-scrollbar {
