@@ -113,6 +113,10 @@ a {
     padding: 0 10px
 }
 
+.rounded{
+    border-radius: 50%;
+}
+
 .btn_update {
     padding: 15px 20px;
     border-radius: 30px;
@@ -238,6 +242,10 @@ nav {
 /* #endregion Footer */
 
 /* #region Effects */
+
+.complete_logo:hover{
+    cursor: pointer;
+}
 
 #sections li:hover {
     box-shadow: inset 4px 0 0 0 var(--limegreen);
