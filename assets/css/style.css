@@ -250,6 +250,7 @@ nav {
 #app_footer {
     height: 90px;
     background-color: var(--light-dark);
+    z-index: 3;
 }
 
 .footer_left,
@@ -532,6 +533,12 @@ nav {
 @media screen and (min-width: 1160px) {
     .col_lg_2 {
         width: calc(100% / 12 * 2);
+    }
+}
+
+@media screen and (max-height: 500px) and (min-width:480px){
+    .playlists, #user {
+        display: none;
     }
 }
 
