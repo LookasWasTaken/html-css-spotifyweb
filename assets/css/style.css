@@ -353,12 +353,16 @@ nav {
     transition: fill 1s;
 }
 
+.btn_update{
+    transform-origin: right;
+    transition: color 1s, border-color 1s, transform 1s;
+}
+
 .btn_update:hover {
     color: var(--limegreen);
     border-color: var(--limegreen);
     transform: scale(1.1);
     transform-origin: right;
-    transition: color 1s, border-color 1s, transform 1s;
 }
 
 .info_text a:hover,
@@ -377,9 +381,12 @@ nav {
     cursor: pointer;
 }
 
-.scale:hover{
+#scale{
+    transition: transform 0.5s;
+}
+
+#scale:hover{
     transform: scale(2);
-    transition: transform 1s;
 }
 
 .container_pl::-webkit-scrollbar {
