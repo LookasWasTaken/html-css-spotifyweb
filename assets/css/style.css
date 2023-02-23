@@ -377,6 +377,11 @@ nav {
     cursor: pointer;
 }
 
+.scale:hover{
+    transform: scale(2);
+    transition: transform 1s;
+}
+
 .container_pl::-webkit-scrollbar {
     width: 10px;
 }
