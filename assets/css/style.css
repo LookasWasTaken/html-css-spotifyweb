@@ -228,6 +228,11 @@ nav {
     aspect-ratio: 1/1;
 }
 
+.img_wrapper > img{
+    transition: border-radius 0.5s;
+}
+
+
 
 /* #endregion Top */
 
@@ -245,7 +250,6 @@ nav {
 
 .img_wrapper > img:hover {
     border-radius: 50%;
-    transition: border-radius 0.5s;
 }
 
 .complete_logo:hover,
@@ -268,7 +272,7 @@ nav {
 #sections li:hover a,
 .playlists a:hover,
 .hovered:hover {
-    color: var(--lighter);
+    color: var(--limegreen);
     transition: color 1s;
 }
 
@@ -279,7 +283,7 @@ nav {
 
 
 #sections li:hover svg path {
-    fill: var(--lighter);
+    fill: var(--limegreen);
     transition: fill 1s;
 }
 
