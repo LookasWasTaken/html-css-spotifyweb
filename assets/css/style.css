@@ -133,7 +133,7 @@ a {
 
 /* #region Debug */
 
-.debug * {
+.-debug * {
     outline: 1px solid limegreen;
 }
 
